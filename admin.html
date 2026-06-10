@@ -11,8 +11,6 @@
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
 .hidden{display:none!important}
 a{color:inherit;text-decoration:none}
-
-/* LOGIN */
 .login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(ellipse at center,#1a0a1f 0%,var(--bg) 70%)}
 .login-box{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:32px 28px;width:100%;max-width:380px;text-align:center}
 .login-logo{font-size:48px;margin-bottom:12px}
@@ -33,17 +31,14 @@ a{color:inherit;text-decoration:none}
 .btn-blue{background:#2563eb;color:#fff}
 .btn-sm{padding:6px 12px;font-size:12px}
 .btn-full{width:100%;justify-content:center}
-
-/* ADMIN LAYOUT */
 .admin-wrap{display:none;min-height:100vh;flex-direction:column}
 .admin-wrap.show{display:flex}
 .topbar{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 20px;display:flex;align-items:center;gap:12px;height:56px;position:sticky;top:0;z-index:50}
 .topbar-brand{font-size:17px;font-weight:800;color:var(--red)}
 .topbar-brand span{color:var(--text)}
 .topbar-right{margin-left:auto;display:flex;align-items:center;gap:8px}
-.topbar-link{font-size:12px;color:var(--muted);padding:5px 10px;border-radius:6px;background:var(--bg3);border:1px solid var(--border);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.topbar-link{font-size:12px;color:var(--muted);padding:5px 10px;border-radius:6px;background:var(--bg3);border:1px solid var(--border);cursor:pointer;display:inline-flex;align-items:center;gap:5px}
 .topbar-link:hover{color:var(--text)}
-
 .admin-body{display:flex;flex:1}
 .sidebar{width:200px;background:var(--bg2);border-right:1px solid var(--border);padding:16px 10px;flex-shrink:0}
 @media(max-width:640px){.sidebar{width:48px}.sidebar .nav-label,.sidebar .nav-section{display:none}}
@@ -52,23 +47,16 @@ a{color:inherit;text-decoration:none}
 .nav-item:hover{background:var(--bg3);color:var(--text)}
 .nav-item.active{background:var(--red);color:#fff}
 .nav-item i{font-size:17px;flex-shrink:0}
-
 .content{flex:1;padding:20px;overflow-y:auto;max-width:900px}
 .page{display:none}
 .page.active{display:block}
-
-/* CARDS */
 .card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px}
 .card h3{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-bottom:14px;display:flex;align-items:center;gap:6px}
 .card h3 i{font-size:15px}
-
-/* STATS */
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-bottom:18px}
 .stat{background:var(--bg3);border-radius:10px;padding:14px;text-align:center;border:1px solid var(--border)}
 .stat .val{font-size:28px;font-weight:800;color:var(--gold)}
 .stat .lbl{font-size:11px;color:var(--muted);margin-top:2px}
-
-/* MOVIE LIST */
 .movie-item{border:1px solid var(--border);border-radius:10px;padding:10px;margin-bottom:8px;display:flex;gap:10px;align-items:center;background:var(--bg3)}
 .movie-item .thumb{width:40px;height:56px;border-radius:6px;background:var(--bg4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:20px;overflow:hidden}
 .movie-item .thumb img{width:100%;height:100%;object-fit:cover}
@@ -76,8 +64,6 @@ a{color:inherit;text-decoration:none}
 .movie-item .info .ttl{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .movie-item .info .sub{font-size:11px;color:var(--muted);margin-top:2px}
 .movie-item .actions{display:flex;gap:5px;flex-shrink:0}
-
-/* AD SETTINGS */
 .ad-section{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:12px}
 .ad-section .ad-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px;display:flex;align-items:center;gap:6px}
 .ad-section .ad-desc{font-size:11px;color:var(--muted);margin-bottom:10px}
@@ -89,33 +75,30 @@ a{color:inherit;text-decoration:none}
 .ad-status .dot{width:7px;height:7px;border-radius:50%;background:#555}
 .ad-status.active .dot{background:#22c55e}
 .ad-status.active{color:#22c55e}
-
-/* TOAST */
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--gold);color:#000;padding:10px 24px;border-radius:20px;font-size:13px;font-weight:700;z-index:9999;opacity:0;transition:opacity 0.3s;pointer-events:none;white-space:nowrap}
 .toast.show{opacity:1}
-
-/* HOW-TO BOX */
 .howto{background:rgba(245,197,24,0.06);border:1px solid rgba(245,197,24,0.15);border-radius:10px;padding:14px;margin-bottom:16px;font-size:12px;color:var(--muted);line-height:1.8}
 .howto strong{color:var(--gold)}
 .howto .step{display:flex;gap:8px;margin-bottom:4px;align-items:flex-start}
 .howto .step-num{background:var(--gold);color:#000;font-weight:800;font-size:10px;border-radius:50%;width:18px;height:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-
-@media(max-width:480px){
-  .content{padding:12px}
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
-}
+.fb-info{background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);border-radius:10px;padding:12px 14px;margin-bottom:16px;font-size:12px;color:#93c5fd;display:flex;align-items:center;gap:8px}
+@media(max-width:480px){.content{padding:12px}.stats-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
 
 <div id="toast" class="toast"></div>
 
-<!-- ═══ LOGIN SCREEN ═══ -->
+<!-- LOGIN SCREEN -->
 <div class="login-wrap" id="login-screen">
   <div class="login-box">
     <div class="login-logo">🔐</div>
     <div class="login-title">CineHub Admin</div>
     <div class="login-sub">অ্যাডমিন প্যানেলে প্রবেশ করুন</div>
+    <div class="fb-info" style="text-align:left;margin-bottom:16px">
+      <i class="ti ti-database" style="font-size:18px;flex-shrink:0"></i>
+      Firebase Realtime Database সংযুক্ত। এখন সব ডেটা সবার কাছে দেখাবে।
+    </div>
     <div class="input-row">
       <label>Admin Password</label>
       <input type="password" id="login-pass" placeholder="পাসওয়ার্ড দিন..." autocomplete="current-password">
@@ -124,63 +107,47 @@ a{color:inherit;text-decoration:none}
       <i class="ti ti-login"></i> Login
     </button>
     <p style="margin-top:14px;font-size:12px;color:var(--muted)">
-      <a href="movies.html" style="color:var(--muted)">← মূল সাইটে ফিরে যান</a>
+      <a href="index.html" style="color:var(--muted)">← মূল সাইটে ফিরে যান</a>
     </p>
   </div>
 </div>
 
-<!-- ═══ ADMIN PANEL ═══ -->
+<!-- ADMIN PANEL -->
 <div class="admin-wrap" id="admin-wrap">
-
-  <!-- TOP BAR -->
   <div class="topbar">
     <div class="topbar-brand">Cine<span>Hub</span> <span style="font-size:11px;color:var(--muted);font-weight:400">Admin</span></div>
     <div class="topbar-right">
-      <a href="movies.html" class="topbar-link" target="_blank"><i class="ti ti-external-link"></i> মূল সাইট</a>
+      <a href="index.html" class="topbar-link" target="_blank"><i class="ti ti-external-link"></i> মূল সাইট</a>
       <button class="btn btn-ghost btn-sm" onclick="doLogout()"><i class="ti ti-logout"></i> লগআউট</button>
     </div>
   </div>
 
   <div class="admin-body">
-
-    <!-- SIDEBAR -->
     <div class="sidebar">
       <div class="nav-section">মেনু</div>
-      <button class="nav-item active" onclick="goPage('dashboard')" id="nav-dashboard">
-        <i class="ti ti-layout-dashboard"></i><span class="nav-label">Dashboard</span>
-      </button>
-      <button class="nav-item" onclick="goPage('add')" id="nav-add">
-        <i class="ti ti-plus"></i><span class="nav-label">Movie যোগ করুন</span>
-      </button>
-      <button class="nav-item" onclick="goPage('manage')" id="nav-manage">
-        <i class="ti ti-list"></i><span class="nav-label">সব Movie</span>
-      </button>
+      <button class="nav-item active" onclick="goPage('dashboard')" id="nav-dashboard"><i class="ti ti-layout-dashboard"></i><span class="nav-label">Dashboard</span></button>
+      <button class="nav-item" onclick="goPage('add')" id="nav-add"><i class="ti ti-plus"></i><span class="nav-label">Movie যোগ করুন</span></button>
+      <button class="nav-item" onclick="goPage('manage')" id="nav-manage"><i class="ti ti-list"></i><span class="nav-label">সব Movie</span></button>
       <div class="nav-section">সেটিংস</div>
-      <button class="nav-item" onclick="goPage('ads')" id="nav-ads">
-        <i class="ti ti-ad"></i><span class="nav-label">Ad সেটিংস</span>
-      </button>
-      <button class="nav-item" onclick="goPage('settings')" id="nav-settings">
-        <i class="ti ti-settings"></i><span class="nav-label">সাইট সেটিংস</span>
-      </button>
+      <button class="nav-item" onclick="goPage('ads')" id="nav-ads"><i class="ti ti-ad"></i><span class="nav-label">Ad সেটিংস</span></button>
+      <button class="nav-item" onclick="goPage('settings')" id="nav-settings"><i class="ti ti-settings"></i><span class="nav-label">সাইট সেটিংস</span></button>
     </div>
 
-    <!-- CONTENT -->
     <div class="content">
 
-      <!-- ─── DASHBOARD ─── -->
+      <!-- DASHBOARD -->
       <div class="page active" id="page-dashboard">
+        <div class="fb-info"><i class="ti ti-database" style="font-size:18px;flex-shrink:0"></i> Firebase সংযুক্ত — এখন যেকোনো ডিভাইস থেকে সব মুভি দেখা যাবে ✅</div>
         <div class="stats-grid">
           <div class="stat"><div class="val" id="d-total">0</div><div class="lbl">মোট কন্টেন্ট</div></div>
           <div class="stat"><div class="val" id="d-movies">0</div><div class="lbl">Movies</div></div>
           <div class="stat"><div class="val" id="d-series">0</div><div class="lbl">Series</div></div>
           <div class="stat"><div class="val" id="d-trending">0</div><div class="lbl">Trending</div></div>
         </div>
-
         <div class="card">
           <h3><i class="ti ti-ad"></i> Ad সিস্টেম স্ট্যাটাস</h3>
           <div id="ad-status-overview"></div>
         </div>
-
         <div class="card">
           <h3><i class="ti ti-info-circle"></i> Ad ক্লিক সিস্টেম কীভাবে কাজ করে</h3>
           <div class="howto">
@@ -188,12 +155,12 @@ a{color:inherit;text-decoration:none}
             <div class="step"><div class="step-num">2</div><div><strong>২য় ক্লিক:</strong> Direct Link Ad #1 নতুন ট্যাবে খুলবে → মুভি খুলবে</div></div>
             <div class="step"><div class="step-num">3</div><div><strong>৩য় ক্লিক:</strong> Direct Link Ad #2 নতুন ট্যাবে খুলবে → মুভি খুলবে</div></div>
             <div class="step"><div class="step-num">4</div><div><strong>৪র্থ+ ক্লিক:</strong> সরাসরি মুভি খুলবে</div></div>
-            <div class="step"><div class="step-num">↓</div><div><strong>Download বাটন:</strong> যতবার ক্লিক করবে প্রতিবার Direct Link Ad #3 চালবে</div></div>
+            <div class="step"><div class="step-num">↓</div><div><strong>Download বাটন:</strong> যতবার ক্লিক করবে প্রতিবার Direct Link Ad #3 চলবে</div></div>
           </div>
         </div>
       </div>
 
-      <!-- ─── ADD MOVIE ─── -->
+      <!-- ADD MOVIE -->
       <div class="page" id="page-add">
         <div class="card">
           <h3 id="add-card-title"><i class="ti ti-plus"></i> নতুন Movie / Series যোগ করুন</h3>
@@ -246,7 +213,7 @@ a{color:inherit;text-decoration:none}
         </div>
       </div>
 
-      <!-- ─── MANAGE ─── -->
+      <!-- MANAGE -->
       <div class="page" id="page-manage">
         <div class="card">
           <h3><i class="ti ti-list"></i> সব Movies & Series (<span id="manage-count">0</span>)</h3>
@@ -255,106 +222,45 @@ a{color:inherit;text-decoration:none}
         </div>
       </div>
 
-      <!-- ─── AD SETTINGS ─── -->
+      <!-- AD SETTINGS -->
       <div class="page" id="page-ads">
         <div class="card">
           <h3><i class="ti ti-brand-adwords"></i> Adsterra / Monetag Ad সেটিংস</h3>
-
-          <!-- POPUNDER -->
           <div class="ad-section">
-            <div class="ad-title">
-              🔴 Popunder Ad
-              <span class="ad-badge popunder">1ম ক্লিকে চলবে</span>
-            </div>
-            <div class="ad-desc">
-              Adsterra/Monetag থেকে Popunder Script Key বা Direct URL দিন।<br>
-              প্রতিটি মুভিতে ১ম ক্লিকে এই Popunder Ad চালু হবে।
-            </div>
-            <div class="input-row">
-              <label>Popunder Direct URL (Adsterra/Monetag)</label>
-              <input type="text" id="ad-popunder" placeholder="https://popunder-url-from-adsterra.com/...">
-            </div>
+            <div class="ad-title">🔴 Popunder Ad <span class="ad-badge popunder">1ম ক্লিকে চলবে</span></div>
+            <div class="ad-desc">প্রতিটি মুভিতে ১ম ক্লিকে এই Popunder Ad চালু হবে।</div>
+            <div class="input-row"><label>Popunder Direct URL</label><input type="text" id="ad-popunder" placeholder="https://popunder-url..."></div>
             <div id="status-popunder" class="ad-status"><div class="dot"></div> সেট করা নেই</div>
           </div>
-
-          <!-- SOCIAL BAR -->
           <div class="ad-section">
-            <div class="ad-title">
-              🔵 Social Bar Ad
-              <span class="ad-badge social">সবসময় দেখাবে</span>
-            </div>
-            <div class="ad-desc">
-              Adsterra Social Bar এর Script URL দিন (pl12345.profitableratecpm.com থেকে)।<br>
-              এটি সাইটের নিচে সবসময় দেখা যাবে।
-            </div>
-            <div class="input-row">
-              <label>Social Bar Script Key (শুধু নম্বরটি, যেমন: 12345678)</label>
-              <input type="text" id="ad-socialbar" placeholder="12345678">
-            </div>
+            <div class="ad-title">🔵 Social Bar Ad <span class="ad-badge social">সবসময় দেখাবে</span></div>
+            <div class="ad-desc">Adsterra Social Bar Script Key (শুধু নম্বর)।</div>
+            <div class="input-row"><label>Social Bar Script Key</label><input type="text" id="ad-socialbar" placeholder="12345678"></div>
             <div id="status-socialbar" class="ad-status"><div class="dot"></div> সেট করা নেই</div>
           </div>
-
-          <!-- DIRECT LINK 1 -->
           <div class="ad-section">
-            <div class="ad-title">
-              🟡 Direct Link Ad #1
-              <span class="ad-badge direct">২য় ক্লিকে চলবে</span>
-            </div>
-            <div class="ad-desc">Adsterra/Monetag Direct Link — মুভিতে ২য় ক্লিকে নতুন ট্যাবে খুলবে।</div>
-            <div class="input-row">
-              <label>Direct Link URL #1</label>
-              <input type="text" id="ad-direct1" placeholder="https://direct-link-1.com/...">
-            </div>
+            <div class="ad-title">🟡 Direct Link Ad #1 <span class="ad-badge direct">২য় ক্লিকে চলবে</span></div>
+            <div class="input-row"><label>Direct Link URL #1</label><input type="text" id="ad-direct1" placeholder="https://..."></div>
             <div id="status-direct1" class="ad-status"><div class="dot"></div> সেট করা নেই</div>
           </div>
-
-          <!-- DIRECT LINK 2 -->
           <div class="ad-section">
-            <div class="ad-title">
-              🟡 Direct Link Ad #2
-              <span class="ad-badge direct">৩য় ক্লিকে চলবে</span>
-            </div>
-            <div class="ad-desc">Adsterra/Monetag Direct Link — মুভিতে ৩য় ক্লিকে নতুন ট্যাবে খুলবে।</div>
-            <div class="input-row">
-              <label>Direct Link URL #2</label>
-              <input type="text" id="ad-direct2" placeholder="https://direct-link-2.com/...">
-            </div>
+            <div class="ad-title">🟡 Direct Link Ad #2 <span class="ad-badge direct">৩য় ক্লিকে চলবে</span></div>
+            <div class="input-row"><label>Direct Link URL #2</label><input type="text" id="ad-direct2" placeholder="https://..."></div>
             <div id="status-direct2" class="ad-status"><div class="dot"></div> সেট করা নেই</div>
           </div>
-
-          <!-- DIRECT LINK 3 (Download) -->
           <div class="ad-section">
-            <div class="ad-title">
-              🟢 Direct Link Ad #3 — Download
-              <span class="ad-badge direct">প্রতি Download ক্লিকে চলবে</span>
-            </div>
-            <div class="ad-desc">Download বাটনে যতবার ক্লিক করবে প্রতিবার এই Ad চলবে। তারপর actual download শুরু হবে।</div>
-            <div class="input-row">
-              <label>Direct Link URL #3 (Download Ad)</label>
-              <input type="text" id="ad-direct3" placeholder="https://direct-link-3.com/...">
-            </div>
+            <div class="ad-title">🟢 Direct Link Ad #3 — Download <span class="ad-badge direct">প্রতি Download ক্লিকে</span></div>
+            <div class="input-row"><label>Direct Link URL #3</label><input type="text" id="ad-direct3" placeholder="https://..."></div>
             <div id="status-direct3" class="ad-status"><div class="dot"></div> সেট করা নেই</div>
           </div>
-
           <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap">
             <button class="btn btn-success" onclick="saveAdSettings()"><i class="ti ti-device-floppy"></i> Ad সেটিংস সেভ করুন</button>
             <button class="btn btn-ghost btn-sm" onclick="clearAdSettings()"><i class="ti ti-trash"></i> সব Ad মুছুন</button>
           </div>
         </div>
-
-        <!-- AD GUIDE -->
-        <div class="card">
-          <h3><i class="ti ti-help"></i> Adsterra / Monetag থেকে কীভাবে লিংক নেবেন</h3>
-          <div class="howto">
-            <div class="step"><div class="step-num">1</div><div><strong>Popunder:</strong> Adsterra → Create Ad → PopUnder → Direct Link কপি করুন</div></div>
-            <div class="step"><div class="step-num">2</div><div><strong>Social Bar:</strong> Adsterra → Create Ad → Social Bar → Script পাবেন, URL থেকে শুধু নম্বরটি নিন</div></div>
-            <div class="step"><div class="step-num">3</div><div><strong>Direct Link:</strong> Adsterra → Create Ad → Direct Link → URL কপি করুন</div></div>
-            <div class="step"><div class="step-num">4</div><div><strong>Monetag:</strong> Monetag → Zones → Popunder/Direct Link → URL কপি করুন</div></div>
-          </div>
-        </div>
       </div>
 
-      <!-- ─── SETTINGS ─── -->
+      <!-- SETTINGS -->
       <div class="page" id="page-settings">
         <div class="card">
           <h3><i class="ti ti-key"></i> Admin পাসওয়ার্ড পরিবর্তন</h3>
@@ -378,110 +284,138 @@ a{color:inherit;text-decoration:none}
   </div><!-- /admin-body -->
 </div><!-- /admin-wrap -->
 
-<script>
-// ── SHARED DB (same localStorage as movies.html) ──────────────────
-const DB = {
-  get movies(){try{return JSON.parse(localStorage.getItem('ch_movies')||'[]')}catch{return[]}},
-  set movies(v){localStorage.setItem('ch_movies',JSON.stringify(v))},
-  get adminPass(){return localStorage.getItem('ch_adm')||'admin123'},
-  set adminPass(v){localStorage.setItem('ch_adm',v)},
-  get settings(){try{return JSON.parse(localStorage.getItem('ch_settings')||'{}')}catch{return{}}},
-  set settings(v){localStorage.setItem('ch_settings',JSON.stringify(v))},
-  get adSettings(){try{return JSON.parse(localStorage.getItem('ch_ad_settings')||'{}')}catch{return{}}},
-  set adSettings(v){localStorage.setItem('ch_ad_settings',JSON.stringify(v))}
+<!-- ═══ FIREBASE SDK ═══ -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getDatabase, ref, set, get, push, remove, onValue, update } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAq1H2BVRqkZpoGySCbyBryQi0ZMxW-914",
+  authDomain: "cinehub-a3f01.firebaseapp.com",
+  databaseURL: "https://cinehub-a3f01-default-rtdb.firebaseio.com",
+  projectId: "cinehub-a3f01",
+  storageBucket: "cinehub-a3f01.firebasestorage.app",
+  messagingSenderId: "1057214578430",
+  appId: "1:1057214578430:web:10df6344d693445fcbafaf",
+  measurementId: "G-RFLG36XDMX"
 };
 
-let editingId = null;
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
 
-// ── AUTH ──────────────────────────────────────────────────────────
-function doLogin(){
+// ── State ─────────────────────────────────────────────
+let allMovies = [];
+let editingId = null;
+let adminPass = 'admin123';
+
+// ── Load admin pass & movies ──────────────────────────
+onValue(ref(db, 'adminPass'), snap => {
+  if (snap.val()) adminPass = snap.val();
+});
+
+onValue(ref(db, 'movies'), snap => {
+  const data = snap.val();
+  allMovies = data ? Object.values(data) : [];
+  refreshDashboard();
+  renderManageList();
+});
+
+onValue(ref(db, 'adSettings'), snap => {
+  const ads = snap.val() || {};
+  // fill ad inputs if page is visible
+  fillAdInputs(ads);
+});
+
+onValue(ref(db, 'siteSettings'), snap => {
+  const st = snap.val() || {};
+  const nameEl = document.getElementById('set-name');
+  const marqEl = document.getElementById('set-marquee');
+  if (nameEl && st.siteName) nameEl.value = st.siteName;
+  if (marqEl && st.marquee) marqEl.value = st.marquee;
+});
+
+// ── AUTH ──────────────────────────────────────────────
+window.doLogin = function() {
   const p = document.getElementById('login-pass').value;
-  if(p !== DB.adminPass){ toast('ভুল পাসওয়ার্ড!','err'); return; }
-  localStorage.setItem('ch_adm_session','1');
+  if (p !== adminPass) { toast('ভুল পাসওয়ার্ড!', 'err'); return; }
+  sessionStorage.setItem('ch_adm', '1');
   document.getElementById('login-screen').style.display = 'none';
   document.getElementById('admin-wrap').classList.add('show');
   refreshDashboard();
-  loadAdInputs();
-  loadSiteSettings();
-}
+};
 
-function doLogout(){
-  localStorage.removeItem('ch_adm_session');
+window.doLogout = function() {
+  sessionStorage.removeItem('ch_adm');
   location.reload();
-}
+};
 
-// Check session on load
-window.addEventListener('DOMContentLoaded', function(){
-  if(localStorage.getItem('ch_adm_session')==='1'){
+window.addEventListener('DOMContentLoaded', function() {
+  if (sessionStorage.getItem('ch_adm') === '1') {
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-wrap').classList.add('show');
-    refreshDashboard();
-    loadAdInputs();
-    loadSiteSettings();
   }
-  document.getElementById('login-pass').addEventListener('keydown',function(e){
-    if(e.key==='Enter') doLogin();
+  document.getElementById('login-pass').addEventListener('keydown', e => {
+    if (e.key === 'Enter') doLogin();
   });
 });
 
-// ── NAVIGATION ─────────────────────────────────────────────────────
-function goPage(name){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
-  document.getElementById('page-'+name).classList.add('active');
-  document.getElementById('nav-'+name).classList.add('active');
-  if(name==='manage') renderManageList();
-  if(name==='dashboard') refreshDashboard();
-  if(name==='settings') loadSiteSettings();
-  if(name==='ads') loadAdInputs();
-}
+// ── NAVIGATION ────────────────────────────────────────
+window.goPage = function(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.getElementById('nav-' + name).classList.add('active');
+  if (name === 'manage') renderManageList();
+  if (name === 'dashboard') refreshDashboard();
+};
 
-// ── DASHBOARD ──────────────────────────────────────────────────────
-function refreshDashboard(){
-  const m = DB.movies;
-  document.getElementById('d-total').textContent = m.length;
-  document.getElementById('d-movies').textContent = m.filter(x=>x.type==='movie').length;
-  document.getElementById('d-series').textContent = m.filter(x=>x.type==='series').length;
-  document.getElementById('d-trending').textContent = m.filter(x=>x.trending).length;
+// ── DASHBOARD ─────────────────────────────────────────
+function refreshDashboard() {
+  document.getElementById('d-total').textContent = allMovies.length;
+  document.getElementById('d-movies').textContent = allMovies.filter(x => x.type === 'movie').length;
+  document.getElementById('d-series').textContent = allMovies.filter(x => x.type === 'series').length;
+  document.getElementById('d-trending').textContent = allMovies.filter(x => x.trending).length;
   renderAdStatusOverview();
 }
 
-function renderAdStatusOverview(){
-  const ads = DB.adSettings;
+async function renderAdStatusOverview() {
+  const snap = await get(ref(db, 'adSettings'));
+  const ads = snap.val() || {};
   const items = [
-    {key:'popunderKey', label:'Popunder Ad', badge:'popunder', desc:'1ম ক্লিকে'},
-    {key:'socialBarKey', label:'Social Bar Ad', badge:'social', desc:'সবসময়'},
-    {key:'directLink1', label:'Direct Link #1', badge:'direct', desc:'2য় ক্লিকে'},
-    {key:'directLink2', label:'Direct Link #2', badge:'direct', desc:'3য় ক্লিকে'},
-    {key:'directLink3', label:'Direct Link #3 (Download)', badge:'direct', desc:'Download ক্লিকে'},
+    { key: 'popunderKey', label: 'Popunder Ad', badge: 'popunder', desc: '1ম ক্লিকে' },
+    { key: 'socialBarKey', label: 'Social Bar Ad', badge: 'social', desc: 'সবসময়' },
+    { key: 'directLink1', label: 'Direct Link #1', badge: 'direct', desc: '2য় ক্লিকে' },
+    { key: 'directLink2', label: 'Direct Link #2', badge: 'direct', desc: '3য় ক্লিকে' },
+    { key: 'directLink3', label: 'Direct Link #3 (Download)', badge: 'direct', desc: 'Download ক্লিকে' },
   ];
-  document.getElementById('ad-status-overview').innerHTML = items.map(it=>`
+  const el = document.getElementById('ad-status-overview');
+  if (el) el.innerHTML = items.map(it => `
     <div style="display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--border)">
-      <div class="ad-status ${ads[it.key]?'active':''}">
+      <div class="ad-status ${ads[it.key] ? 'active' : ''}">
         <div class="dot"></div>
         <strong style="color:var(--text);margin-right:4px">${it.label}</strong>
         <span class="ad-badge ${it.badge}">${it.desc}</span>
       </div>
-      <span style="margin-left:auto;font-size:11px;color:${ads[it.key]?'#22c55e':'var(--muted)'}">
-        ${ads[it.key]?'✅ সক্রিয়':'❌ সেট করা নেই'}
+      <span style="margin-left:auto;font-size:11px;color:${ads[it.key] ? '#22c55e' : 'var(--muted)'}">
+        ${ads[it.key] ? '✅ সক্রিয়' : '❌ সেট করা নেই'}
       </span>
-    </div>
-  `).join('');
+    </div>`).join('');
 }
 
-// ── ADD / EDIT MOVIE ───────────────────────────────────────────────
-function saveMovie(){
+// ── ADD / EDIT MOVIE ──────────────────────────────────
+window.saveMovie = async function() {
   const title = document.getElementById('m-title').value.trim();
-  if(!title){ toast('Movie title দিন!','err'); return; }
+  if (!title) { toast('Movie title দিন!', 'err'); return; }
+  const id = editingId || Date.now().toString();
   const m = {
-    id: editingId || Date.now(),
+    id,
     title,
-    year: parseInt(document.getElementById('m-year').value)||2024,
+    year: parseInt(document.getElementById('m-year').value) || 2024,
     type: document.getElementById('m-type').value,
     genre: document.getElementById('m-genre').value,
     lang: document.getElementById('m-lang').value,
     quality: document.getElementById('m-quality').value,
-    rating: parseFloat(document.getElementById('m-rating').value)||0,
+    rating: parseFloat(document.getElementById('m-rating').value) || 0,
     duration: document.getElementById('m-duration').value,
     thumb: document.getElementById('m-thumb').value.trim(),
     banner: document.getElementById('m-banner').value.trim(),
@@ -494,23 +428,18 @@ function saveMovie(){
     isnew: document.getElementById('m-new').checked,
     emoji: '🎬'
   };
-  const movies = DB.movies;
-  if(editingId){
-    const i = movies.findIndex(x=>x.id===editingId);
-    if(i>=0) movies[i] = m;
-    toast('Movie আপডেট হয়েছে ✅');
-  } else {
-    movies.unshift(m);
-    toast('Movie যোগ হয়েছে ✅');
+  try {
+    await set(ref(db, 'movies/' + id), m);
+    toast(editingId ? 'Movie আপডেট হয়েছে ✅' : 'Movie যোগ হয়েছে ✅');
+    clearAddForm();
+  } catch(e) {
+    toast('Firebase Error: ' + e.message, 'err');
   }
-  DB.movies = movies;
-  clearAddForm();
-  refreshDashboard();
-}
+};
 
-function clearAddForm(){
-  ['m-title','m-thumb','m-banner','m-desc','m-embed','m-dl1','m-dl2','m-dl3'].forEach(id=>{
-    const el = document.getElementById(id); if(el) el.value='';
+window.clearAddForm = function() {
+  ['m-title','m-thumb','m-banner','m-desc','m-embed','m-dl1','m-dl2','m-dl3'].forEach(id => {
+    const el = document.getElementById(id); if (el) el.value = '';
   });
   document.getElementById('m-year').value = new Date().getFullYear();
   document.getElementById('m-rating').value = '';
@@ -520,32 +449,34 @@ function clearAddForm(){
   editingId = null;
   document.getElementById('add-card-title').innerHTML = '<i class="ti ti-plus"></i> নতুন Movie / Series যোগ করুন';
   document.getElementById('add-btn').innerHTML = '<i class="ti ti-plus"></i> Add Movie';
-}
+};
 
-function renderManageList(){
-  const q = (document.getElementById('manage-search').value||'').toLowerCase();
-  const movies = DB.movies.filter(m=>!q||m.title.toLowerCase().includes(q));
-  document.getElementById('manage-count').textContent = DB.movies.length;
-  document.getElementById('manage-list').innerHTML = movies.length ? movies.map(m=>`
+// ── MANAGE LIST ───────────────────────────────────────
+window.renderManageList = function() {
+  const q = (document.getElementById('manage-search')?.value || '').toLowerCase();
+  const movies = allMovies.filter(m => !q || m.title.toLowerCase().includes(q));
+  const countEl = document.getElementById('manage-count');
+  if (countEl) countEl.textContent = allMovies.length;
+  const listEl = document.getElementById('manage-list');
+  if (!listEl) return;
+  listEl.innerHTML = movies.length ? movies.map(m => `
     <div class="movie-item">
-      <div class="thumb">
-        ${m.thumb?`<img src="${m.thumb}" alt="${m.title}" onerror="this.parentElement.textContent='${m.emoji||'🎬'}'">`:m.emoji||'🎬'}
-      </div>
+      <div class="thumb">${m.thumb ? `<img src="${m.thumb}" alt="${m.title}" onerror="this.parentElement.textContent='${m.emoji||'🎬'}'">` : m.emoji || '🎬'}</div>
       <div class="info">
         <div class="ttl">${m.title}</div>
-        <div class="sub">${m.type==='series'?'Series':'Movie'} · ${m.year} · ${m.genre} · ${m.lang} · ${m.quality}</div>
+        <div class="sub">${m.type === 'series' ? 'Series' : 'Movie'} · ${m.year} · ${m.genre} · ${m.lang} · ${m.quality}</div>
       </div>
       <div class="actions">
-        <button class="btn btn-ghost btn-sm" onclick="editMovie(${m.id})"><i class="ti ti-edit"></i></button>
-        <button class="btn btn-danger btn-sm" onclick="deleteMovie(${m.id})"><i class="ti ti-trash"></i></button>
+        <button class="btn btn-ghost btn-sm" onclick="editMovie('${m.id}')"><i class="ti ti-edit"></i></button>
+        <button class="btn btn-danger btn-sm" onclick="deleteMovie('${m.id}')"><i class="ti ti-trash"></i></button>
       </div>
     </div>`).join('')
   : '<p style="text-align:center;color:var(--muted);padding:24px;font-size:13px">কোনো Movie নেই</p>';
-}
+};
 
-function editMovie(id){
-  const m = DB.movies.find(x=>x.id===id);
-  if(!m) return;
+window.editMovie = function(id) {
+  const m = allMovies.find(x => x.id == id);
+  if (!m) return;
   editingId = id;
   goPage('add');
   document.getElementById('m-title').value = m.title;
@@ -555,62 +486,61 @@ function editMovie(id){
   document.getElementById('m-lang').value = m.lang;
   document.getElementById('m-quality').value = m.quality;
   document.getElementById('m-rating').value = m.rating;
-  document.getElementById('m-duration').value = m.duration||'';
-  document.getElementById('m-thumb').value = m.thumb||'';
-  document.getElementById('m-banner').value = m.banner||'';
-  document.getElementById('m-desc').value = m.desc||'';
-  document.getElementById('m-embed').value = m.embed||'';
-  document.getElementById('m-dl1').value = m.dl1||'';
-  document.getElementById('m-dl2').value = m.dl2||'';
-  document.getElementById('m-dl3').value = m.dl3||'';
+  document.getElementById('m-duration').value = m.duration || '';
+  document.getElementById('m-thumb').value = m.thumb || '';
+  document.getElementById('m-banner').value = m.banner || '';
+  document.getElementById('m-desc').value = m.desc || '';
+  document.getElementById('m-embed').value = m.embed || '';
+  document.getElementById('m-dl1').value = m.dl1 || '';
+  document.getElementById('m-dl2').value = m.dl2 || '';
+  document.getElementById('m-dl3').value = m.dl3 || '';
   document.getElementById('m-trending').checked = !!m.trending;
   document.getElementById('m-new').checked = !!m.isnew;
   document.getElementById('add-card-title').innerHTML = '<i class="ti ti-edit"></i> Movie এডিট করুন';
   document.getElementById('add-btn').innerHTML = '<i class="ti ti-check"></i> Update Movie';
-}
+};
 
-function deleteMovie(id){
-  if(!confirm('এই Movie মুছে ফেলবেন?')) return;
-  DB.movies = DB.movies.filter(x=>x.id!==id);
-  renderManageList();
-  refreshDashboard();
-  toast('Movie মুছে গেছে ✅');
-}
+window.deleteMovie = async function(id) {
+  if (!confirm('এই Movie মুছে ফেলবেন?')) return;
+  try {
+    await remove(ref(db, 'movies/' + id));
+    toast('Movie মুছে গেছে ✅');
+  } catch(e) {
+    toast('Error: ' + e.message, 'err');
+  }
+};
 
-function clearAllMovies(){
-  if(!confirm('সব Movie মুছে ফেলবেন? এটি পূর্বাবস্থায় আনা যাবে না!')) return;
-  DB.movies = [];
-  renderManageList();
-  refreshDashboard();
-  toast('সব Movie মুছে গেছে','err');
-}
+window.clearAllMovies = async function() {
+  if (!confirm('সব Movie মুছে ফেলবেন? এটি পূর্বাবস্থায় আনা যাবে না!')) return;
+  try {
+    await remove(ref(db, 'movies'));
+    toast('সব Movie মুছে গেছে', 'err');
+  } catch(e) {
+    toast('Error: ' + e.message, 'err');
+  }
+};
 
-// ── AD SETTINGS ────────────────────────────────────────────────────
-function loadAdInputs(){
-  const ads = DB.adSettings;
-  document.getElementById('ad-popunder').value = ads.popunderKey||'';
-  document.getElementById('ad-socialbar').value = ads.socialBarKey||'';
-  document.getElementById('ad-direct1').value = ads.directLink1||'';
-  document.getElementById('ad-direct2').value = ads.directLink2||'';
-  document.getElementById('ad-direct3').value = ads.directLink3||'';
+// ── AD SETTINGS ───────────────────────────────────────
+function fillAdInputs(ads) {
+  const fields = { 'ad-popunder': 'popunderKey', 'ad-socialbar': 'socialBarKey', 'ad-direct1': 'directLink1', 'ad-direct2': 'directLink2', 'ad-direct3': 'directLink3' };
+  for (const [elId, key] of Object.entries(fields)) {
+    const el = document.getElementById(elId);
+    if (el) el.value = ads[key] || '';
+  }
   updateAdStatuses(ads);
 }
 
-function updateAdStatuses(ads){
-  function setStatus(id, val){
-    const el = document.getElementById('status-'+id);
-    if(!el) return;
-    if(val){ el.className='ad-status active'; el.innerHTML='<div class="dot"></div> সক্রিয় আছে ✅'; }
-    else { el.className='ad-status'; el.innerHTML='<div class="dot"></div> সেট করা নেই'; }
+function updateAdStatuses(ads) {
+  const map = { popunder: 'popunderKey', socialbar: 'socialBarKey', direct1: 'directLink1', direct2: 'directLink2', direct3: 'directLink3' };
+  for (const [suffix, key] of Object.entries(map)) {
+    const el = document.getElementById('status-' + suffix);
+    if (!el) continue;
+    if (ads[key]) { el.className = 'ad-status active'; el.innerHTML = '<div class="dot"></div> সক্রিয় আছে ✅'; }
+    else { el.className = 'ad-status'; el.innerHTML = '<div class="dot"></div> সেট করা নেই'; }
   }
-  setStatus('popunder', ads.popunderKey);
-  setStatus('socialbar', ads.socialBarKey);
-  setStatus('direct1', ads.directLink1);
-  setStatus('direct2', ads.directLink2);
-  setStatus('direct3', ads.directLink3);
 }
 
-function saveAdSettings(){
+window.saveAdSettings = async function() {
   const ads = {
     popunderKey: document.getElementById('ad-popunder').value.trim(),
     socialBarKey: document.getElementById('ad-socialbar').value.trim(),
@@ -618,55 +548,65 @@ function saveAdSettings(){
     directLink2: document.getElementById('ad-direct2').value.trim(),
     directLink3: document.getElementById('ad-direct3').value.trim(),
   };
-  DB.adSettings = ads;
-  updateAdStatuses(ads);
-  renderAdStatusOverview();
-  toast('Ad সেটিংস সেভ হয়েছে ✅');
-}
+  try {
+    await set(ref(db, 'adSettings'), ads);
+    updateAdStatuses(ads);
+    toast('Ad সেটিংস সেভ হয়েছে ✅');
+  } catch(e) {
+    toast('Error: ' + e.message, 'err');
+  }
+};
 
-function clearAdSettings(){
-  if(!confirm('সব Ad সেটিংস মুছবেন?')) return;
-  DB.adSettings = {};
-  loadAdInputs();
-  toast('Ad সেটিংস মুছে গেছে','err');
-}
+window.clearAdSettings = async function() {
+  if (!confirm('সব Ad সেটিংস মুছবেন?')) return;
+  try {
+    await remove(ref(db, 'adSettings'));
+    toast('Ad সেটিংস মুছে গেছে', 'err');
+  } catch(e) {
+    toast('Error: ' + e.message, 'err');
+  }
+};
 
-// ── SITE SETTINGS ──────────────────────────────────────────────────
-function loadSiteSettings(){
-  const st = DB.settings;
-  document.getElementById('set-name').value = st.siteName||'CineHub';
-  document.getElementById('set-marquee').value = st.marquee||'';
-}
-
-function saveSiteSettings(){
+// ── SITE SETTINGS ─────────────────────────────────────
+window.saveSiteSettings = async function() {
   const st = {
-    siteName: document.getElementById('set-name').value.trim()||'CineHub',
+    siteName: document.getElementById('set-name').value.trim() || 'CineHub',
     marquee: document.getElementById('set-marquee').value.trim()
   };
-  DB.settings = st;
-  toast('সাইট সেটিংস সেভ হয়েছে ✅');
-}
+  try {
+    await set(ref(db, 'siteSettings'), st);
+    toast('সাইট সেটিংস সেভ হয়েছে ✅');
+  } catch(e) {
+    toast('Error: ' + e.message, 'err');
+  }
+};
 
-function changePass(){
+// ── CHANGE PASSWORD ───────────────────────────────────
+window.changePass = async function() {
   const cur = document.getElementById('cur-pass').value;
   const nw = document.getElementById('new-pass').value;
-  if(cur !== DB.adminPass){ toast('বর্তমান পাসওয়ার্ড ভুল!','err'); return; }
-  if(!nw||nw.length<6){ toast('কমপক্ষে ৬ অক্ষর দিন!','err'); return; }
-  DB.adminPass = nw;
-  toast('পাসওয়ার্ড আপডেট হয়েছে ✅');
-  document.getElementById('cur-pass').value = '';
-  document.getElementById('new-pass').value = '';
-}
+  if (cur !== adminPass) { toast('বর্তমান পাসওয়ার্ড ভুল!', 'err'); return; }
+  if (!nw || nw.length < 6) { toast('কমপক্ষে ৬ অক্ষর দিন!', 'err'); return; }
+  try {
+    await set(ref(db, 'adminPass'), nw);
+    adminPass = nw;
+    toast('পাসওয়ার্ড আপডেট হয়েছে ✅');
+    document.getElementById('cur-pass').value = '';
+    document.getElementById('new-pass').value = '';
+  } catch(e) {
+    toast('Error: ' + e.message, 'err');
+  }
+};
 
-// ── TOAST ──────────────────────────────────────────────────────────
-function toast(msg, type='ok'){
+// ── TOAST ─────────────────────────────────────────────
+window.toast = function(msg, type = 'ok') {
   const t = document.getElementById('toast');
   t.textContent = msg;
-  t.style.background = type==='err' ? '#e24b4a' : '#f5c518';
-  t.style.color = type==='err' ? '#fff' : '#000';
+  t.style.background = type === 'err' ? '#e24b4a' : '#f5c518';
+  t.style.color = type === 'err' ? '#fff' : '#000';
   t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'), 2500);
-}
+  setTimeout(() => t.classList.remove('show'), 2500);
+};
 </script>
 </body>
 </html>
